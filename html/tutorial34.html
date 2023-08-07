@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        margin: 23px 12px ;
+        padding: 23px 12px;
+        border: 2px solid palevioletred;
+        background-color: black;
+        box-shadow: 7px 5px 12px 35px rgba(255, 64, 188, 0.5); 
+        box-shadow: inset 3px 5px rgb(104, 123, 209);
+        /* box-shadow: 2px 5px 2px 34px rgb(242, 62, 92);  */
+        box-shadow: 7px 5px 10px rgb(242, 62, 92);
+        box-shadow: offset-x offset-y color pink;
+        box-shadow: offset-x offset-y blur-radius color blue;
+        box-shadow: offset-x offset-y blur-radius spread-radius color;
+      
+    }
+   h2{
+        color: palevioletred;
+    }
+   p{
+        color:palevioletred;
+    }
+    .card h2{
+/* text-shadow: 3px 4px rgb(230, 230, 230); */
+/* text-shadow: 3px 4px 2px rgb(203, 203, 203); */
+text-shadow: -2px -2px 2px rgb(237, 234, 234);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+        <h2>This is C++ course</h2>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, quibusdam? Natus sapiente minima pariatur animi atque dolorem possimus perferendis necessitatibus accusantium aperiam quaerat, sint esse culpa itaque ipsa, aspernatur quisquam quae! Autem!</p>
+        </div>
+        <div class="card" id="car-2">
+        <h2>This is html course</h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit nobis odit, voluptate soluta veritatis non est inventore molestias fugit aliquid mollitia, amet, repellendus reprehenderit perferendis dolorum totam possimus dolores excepturi vero eveniet!</p>
+        </div>
+        <div class="card" id="car-3">
+        <h2></h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti mollitia ea doloremque magnam molestias vitae possimus iure a debitis alias tempore vel temporibus, dolor voluptatibus dolore rerum deserunt aperiam expedita dolorem?</p>
+        </div>
+    </div>
+</body>
+</html>

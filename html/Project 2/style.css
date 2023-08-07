@@ -1,0 +1,257 @@
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables  */
+:root{
+    --navbar-height: 59px;
+}
+
+
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+
+}
+
+#navbar::before{
+    content: " ";
+    background-color: rgb(220, 156, 156);
+    position: absolute;
+    height: 80%;         
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1 ;
+    opacity: 0.8;
+ }
+
+/* Navigation Bar: Logo and Image  */
+
+#logo{
+   
+    margin: 10px 12px;
+
+}
+
+
+#logo img{
+height: 58px ;
+margin: 5px 6px;
+padding: 4px;
+ /* changed margin from margin: 3px 6px; to margin: auto 6px; */
+}
+
+/* Navigation Bar: List styling  */
+#navbar ul{
+    display: flex;
+    font-family: 'Lexend', sans-serif;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+   color: rgb(255, 255, 255);
+   display: block;
+   padding: 3px 18px;
+   border-radius: 10px;
+   text-decoration: none;
+}
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px ;
+    height: 530px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -1;
+}
+#home::before{
+content: " ";
+position: absolute;
+background: url('img/saladbg.png') no-repeat center center/cover;
+top: 0px;
+left: 0px;
+height: 642px;         
+width: 100%;
+z-index: -1 ;
+opacity: 0.8;
+}
+
+#home h1{
+    color: rgb(52, 49, 49);
+    text-align: center;
+    font-family: 'Borel', cursive;
+    font-size: 3.5rem;
+    
+}
+#home p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Lexend', sans-serif;
+
+}
+/* Services Section  */
+#services{
+    margin: 10px 44px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(110, 29, 29);
+    padding: 34px;
+    margin: 2px 6px;
+    border-radius: 28px;
+    background: rgb(246, 228, 228);
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 146px;
+    margin: auto;
+    display: block;
+    
+}
+#services .box p{
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+}
+
+/* Clients Section  */
+#client-section{
+    margin-top: -1%;
+    position: relative;
+    height: 344px;
+    z-index: -1;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('img/bg-fruits-veggies.png') no-repeat center center;
+    width: 100%;
+    background-size: cover !important;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    right: 0;
+   
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px ;
+    display: flex;
+}
+#clients img{  
+ height: 124px;
+ padding: inherit;
+}
+.clientLogo{
+    width: 120px;
+    display: flex;
+    z-index: -1;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('img/brwnkeybrd.png') no-repeat center center;
+    background-size: cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Lexend', sans-serif;
+
+}
+footer{
+    background: black;
+    color: azure;
+    padding:9px 20px ;
+
+}
+/* Utility Classes  */
+.h-primary{
+    font-size: 45px;
+     padding: 12px;
+    font-family: 'Dancing Script', cursive;
+
+
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Lexend', sans-serif;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    color: aliceblue;
+    background-color: rgba(213, 36, 36, 0.263);
+    margin:17px ;
+    font-size: 1rem;
+    border-radius: 9px;
+    opacity: 1.2;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color: rgb(254, 208, 208);
+    color: black;
+}
+.center{
+    text-align: center;
+}
+
+
+.devsPizza{
+
+    width: 200px;
+    display: flex;
+}
+
+

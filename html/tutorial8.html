@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is forms tutorial</h2>
+    <form action="dev.php">
+        <label for="name"> Name: </label>
+    <div>
+        <input type="text" name="myName" id="name"> 
+    </div>
+  <div> 
+    Role: <input type="text" name="myRole">
+  </div>
+  <div> 
+    Email: <input type="email" name="myEmail">
+  </div>
+  
+  <div> 
+    Date: <input type="date" name="myDate">
+  </div>
+  <div> 
+    Bonus: <input type="number" name="myBonus">
+  </div>
+  <div>
+  <label for="checkbox">Are you a human?:</label>
+    <input type="checkbox" name="myProof" id="checkbox">
+  </div>
+  <div> 
+    Gender: Female <input type="radio" name="myGender"> Male<input type="radio" name="myGender"> 
+    Other <input type="radio" name="myGender">
+        </div>
+
+  <div> 
+Write about yourself: <br> <textarea name="myText" cols="40" rows="10"></textarea><br>
+        </div>
+<div>
+    <label for="car">Car</label>
+    <select name="myCar" id="car">
+    <option value="ind"> Indica</option>
+    <option value="swf" selected> Swift </option>
+    <option value="bmw"> Bmw</option>
+</select>
+</div>
+        <div>
+        <input type="submit" value="Submit Now">
+     <input type="reset" value="Reset Now">
+     </div>
+     <!-- <button  class="btn waves-effect waves-light red" type="reset" value="Reset" > Reset </button> -->
+ </div>
+</form>
+</body>
+</html>

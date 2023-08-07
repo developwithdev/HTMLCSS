@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transitions</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(189, 165, 211);
+    }
+    #box {
+      display: flex;
+      height: 200px;
+      width: 200px;
+      background-color: blueviolet;
+      justify-content: center;
+      align-items: center;
+      /* transition-property: background-color;
+      transition-duration: 2s;
+      transition-timing-function: ease-in; */
+
+      /* transition: background-color 1s ease-in ; */
+      transition: all 1s ease-in;
+    }
+
+    #box:hover {
+      background-color: pink;
+      height: 200px;
+      width: 200px;
+      border-radius: 100%;
+      font-size: 17px;
+    }
+  </style>
+  <body>
+    <h3>This is css transition tutorial</h3>
+    <div class="container">
+      <div id="box">box or circle ??</div>
+    </div>
+  </body>
+</html>
